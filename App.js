@@ -6,6 +6,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export default function App() {
   const [text, setText] = useState("");
   const [list, setList] = useState([]);
+  saveList();
 
   async function saveList() {
     try {
